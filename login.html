@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+    <style>
+        body
+        {
+            background-image: url(ww.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div
+        {
+            text-align: center;
+            font-size: 40px;   
+        }
+        input
+        {
+            width: 200px;
+            height: 50px;
+            
+            color: black;
+           background-color:tan;
+            font-size: 30px;
+        }
+.form-box
+{
+    margin-left:300px;
+    
+    width: 380px;
+    height: 480px;
+    position: relative;
+    background:#E5E2E4 ;
+    padding: 5px;
+    overflow: hidden;
+    transform: translate(40%,15%);
+   
+}
+.button-box
+{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px  #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn
+{
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+       background: linear-gradient(to right,#9D9B9D ,#cccc,#ffff);
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group
+{
+    top: 90px;
+    position:absolute;
+    width: 280px;
+    
+    transition: .5s;
+}
+.input-field
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    
+}
+
+.input-group #repass_error,
+.input-group #email_error
+{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 15px;
+    color: #C62828;
+    text-align: left;
+    border-radius: 2px;
+    display: none;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#9D9B9D ,#cccc,#ffff);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+#login
+{
+    left: 50px;
+}
+#register
+{
+    left: 450px;
+}
+    </style>
+
+    </head>
+    <body>
+    
+    
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()" >Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group"  action="home.html" method="post" name="form" >
+                 
+                <input type="text" class="input-field" id="name" placeholder="user name" required>
+                <input type="password" class="input-field" id="pass" placeholder="Enter Password" required >
+                
+                <button type="submit" class="submit-btn" >Log in</button>
+                 
+             </form>
+             <form id="register" class="input-group" action="home.html" method="post" name="form" onsubmit="return matching()">
+                <input type="text" class="input-field" id="newId" placeholder="User Name" required >
+                <input type="email" class="input-field" placeholder="Email ID" id="Email" required>
+                 <div id="email_error">please enter valid email</div>
+                <input type="password" class="input-field" id="n-pass" placeholder="Enter Password"  required>
+                <input type="password" class="input-field" id="r-pass" placeholder="Re-Enter password"  required>
+                <div id="repass_error">this password doesn't matching</div>
+                <button type="submit" class="submit-btn">Register</button>
+             </form>
+             
+        <script >
+             var x=document.getElementById("login");
+            var y =document.getElementById("register");
+            var z =document.getElementById("btn");
+            function register()
+            {
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+            }
+             function login()
+            {
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0px";
+            }
+            
+            
+
+                        //////////////////////////////
+            
+            document.getElementById('login').addEventListener('submit',function(e){
+                e.preventDefault();
+              
+                  var username=document.querySelector('#name').value;
+                  var password=document.querySelector('#pass').value;
+                if(document.querySelector('#name').value == 'admin' && document.querySelector('#pass').value == 12345)
+                {
+                   console.log("Hello");
+                    location.assign('admin.html');
+                }
+                else if(username != "" && password != "" )
+                {
+                       location.assign('home.html');
+                }
+                console.log("Hello");
+            });
+                         
+         function matching(){
+            var n_pass=document.querySelector('#n-pass').value;
+            var r_pass=document.querySelector('#r-pass').value;
+             
+            
+            if(n_pass !== r_pass){
+                document.getElementById('r-pass').value="";
+                document.getElementById('r-pass').focus();
+                document.getElementById('repass_error').style.display="block";
+                return false;
+             }
+            
+         }
+            
+        </script>
+            
+       
+    </body>
+</html>

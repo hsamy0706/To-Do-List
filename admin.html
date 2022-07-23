@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>ToDo List</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Grenze+Gotisch:wght@300&family=Indie+Flower&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+  
+    <style>
+       
+    </style>
+</head>
+    <body>
+    <section class="container">
+        <div class="sidebar">
+       
+          <ul >
+            <li> <header class="sitename">Admin Page</header></li>
+              <li ><p onclick="Save()"><a  href="Home.html">Home</a></p></li>
+            <li class="active"><a  href="#fonts">Font</a></li>
+            <li><a  href="#background-color">Background_Color</a></li>
+            <li ><a  href="login.html">LogOut</a></li>
+            </ul>  
+            
+        </div>
+        
+        <section class="fonts" id="fonts">
+        <div class="content">
+             <h1>Font Style</h1>
+            <div class="buttons">
+    <input type="button" value="Dancing Script" class="btn" id="bt_1" style="font-family:Dancing Script ">
+    <input type="button" value="Grenze Gotisch" class="btn" id="bt_2" style="font-family:Grenze Gotisch ">
+    <input type="button" value="Indie Flower" class="btn"   id="bt_3" style="font-family:Indie Flower ">
+    <input type="button" value="Raleway" class="btn"        id="bt_4" style="font-family:Raleway ">
+    <input type="button" value="cursive" class="btn"    id="bt_5" style="font-family: cursive">
+    <input type="button" value="sans-serif" class="btn" id="bt_6" style="font-family:sans-serif">
+    <input type="button" value="fantasy" class="btn"    id="bt_7" style="font-family:fantasy">
+    <input type="button" value="monospace" class="btn"  id="bt_8" style="font-family:monospace">
+    <input type="button" value="serif" class="btn"      id="bt_9" style="font-family:serif">
+    <input type="button" value="inherit" class="btn"    id="bt_10" style="font-family:inherit">
+
+            </div>
+          
+            
+            
+                 <h1>Font Color</h1>
+            <div class="buttons">
+    <input type="button" value="red" class="btn" id="bt11" style="color:red ">
+    <input type="button" value="aqua" class="btn" id="bt12" style="color:aqua ">
+    <input type="button" value="black" class="btn" id="bt13" style="color:black ">
+    <input type="button" value="blue" class="btn" id="bt14" style="color:blue">
+    <input type="button" value="silver" class="btn" id="bt15" style="color: silver">
+    <input type="button" value="pink" class="btn" id="bt16" style="color:pink">
+    <input type="button" value="navy" class="btn" id="bt17" style="color:navy">
+    <input type="button" value="darkgray" class="btn" id="bt18" style="color:darkgray">
+    <input type="button" value="teal" class="btn" id="bt19" style="color:teal">
+    <input type="button" value="fuchsia" class="btn" id="bt20" style="color:fuchsia">
+
+  </div>
+       
+            </div>
+        </section>
+        
+        <section class="background-color" id="background-color">
+        <div class="content">
+           <h1>Background Color</h1>
+            <div style="margin-left:1%;">
+<input type="button" value="" onclick="changeColor('FFFFFF')" style="background-color: white"/>
+<input type="button" value="" onclick="changeColor('C0C0C0')" style="background-color: silver"/>
+<input type="button" value="" onclick="changeColor('FF0000')" style="background-color: red"/>
+<input type="button" value="" onclick="changeColor('008000')" style="background-color: green"/>
+<input type="button" value="" onclick="changeColor('0000FF')"style="background-color: blue"/>
+<input type="button" value="" onclick="changeColor('00FFFF')"style="background-color: aqua"/>
+<input type="button" value="" onclick="changeColor('FF00FF')"style="background-color: fuchsia"/>
+<input type="button" value="" onclick="changeColor('808080')"style="background-color: gray"/>
+<input type="button" value="" onclick="changeColor('00FF00')"style="background-color: lime"/>
+<input type="button" value="" onclick="changeColor('800000')"style="background-color: maroon"/>
+<input type="button" value="" onclick="changeColor('000080')"style="background-color: navy"/>
+<input type="button" value="" onclick="changeColor('808000')"style="background-color: olive"/>
+<input type="button" value="" onclick="changeColor('800080')"style="background-color: purple"/>
+<input type="button" value="" onclick="changeColor('008080')"style="background-color: teal"/>
+<input type="button" value="" onclick="changeColor('FFFF00')"style="background-color: yellow"/>
+<input type="button" value="" onclick="changeColor('70DB93')"style="background-color: aquamarine"/>
+<input type="button" value="" onclick="changeColor('9F5F9F')"style="background-color: violet"/>
+<input type="button" value="" onclick="changeColor('B5A642')"style="background-color: #B5A642"/>
+<input type="button" value="" onclick="changeColor('B87333')"style="background-color: #B87333"/>
+<input type="button" value="" onclick="changeColor('FF6EC7')"style="background-color: pink"/>
+<input type="button" value="" onclick="changeColor('FF7FOO')"style="background-color: orange"/>
+<input type="button" value="" onclick="changeColor('coral')"style="background-color: coral"/>
+<input type="button" value="" onclick="changeColor('khaki')"style="background-color: khaki"/>
+<input type="button" value="" onclick="changeColor('sienna')"style="background-color: sienna"/>
+<input type="button" value="" onclick="changeColor('darkcyan')"style="background-color: darkcyan"/>
+<input type="button" value="" onclick="changeColor('FFF5EE')"style="background-color: #FFF5EE"/>
+                                
+                
+</div>
+            </div>
+        </section>
+        </section>
+
+        <script type="text/javascript" src="admin.js"></script>
+         </body>
+</html>

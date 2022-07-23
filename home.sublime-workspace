@@ -1,0 +1,519 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"fontFamily"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"you",
+				"yourTask"
+			],
+			[
+				"m",
+				"margin-left\tproperty"
+			],
+			[
+				"ma",
+				"margin-left\tproperty"
+			],
+			[
+				"pad",
+				"padding-left\tproperty"
+			],
+			[
+				"back",
+				"background-attachment\tproperty"
+			],
+			[
+				"b",
+				"button\tTag"
+			],
+			[
+				"q",
+				"querySelector"
+			],
+			[
+				"padd",
+				"padding-bottom\tproperty"
+			],
+			[
+				"bac",
+				"background-size\tproperty"
+			],
+			[
+				"ba",
+				"backgroundSize"
+			],
+			[
+				"jp",
+				"jpeg"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"background-o",
+				"background-blend-mode\tproperty"
+			],
+			[
+				"p",
+				"padding-left\tproperty"
+			],
+			[
+				"mar",
+				"margin\tproperty"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"e",
+				"email_error"
+			],
+			[
+				"r",
+				"r_pass"
+			],
+			[
+				"n",
+				"n_pass"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"v",
+				"validated"
+			],
+			[
+				"va",
+				"validated"
+			],
+			[
+				"lo",
+				"Log"
+			],
+			[
+				"o",
+				"onsubmit"
+			],
+			[
+				"a",
+				"action"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"rep",
+				"repass-error"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"bo",
+				"bottom\tproperty"
+			],
+			[
+				"border-",
+				"border-radius\tproperty"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"d",
+				"display\tproperty"
+			],
+			[
+				"text",
+				"text-indent\tproperty"
+			],
+			[
+				"top",
+				"top\tproperty"
+			],
+			[
+				"i",
+				"italic\tfont-style"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"t",
+				"text-align\tproperty"
+			],
+			[
+				"fo",
+				"font-weight\tproperty"
+			],
+			[
+				"s",
+				"span\tTag"
+			],
+			[
+				"he",
+				"header\tTag"
+			],
+			[
+				"ob",
+				"object-position\tproperty"
+			],
+			[
+				"c",
+				"cover\tobject-fit"
+			],
+			[
+				"u",
+				"url()\tbackground-image"
+			],
+			[
+				"marg",
+				"margin-right\tproperty"
+			],
+			[
+				"background-C",
+				"background-color\tproperty"
+			],
+			[
+				"li",
+				"line-height\tproperty"
+			],
+			[
+				"tex",
+				"text-decoration\tproperty"
+			],
+			[
+				"pa",
+				"padding-top\tproperty"
+			],
+			[
+				"h",
+				"h4\tTag"
+			],
+			[
+				"se",
+				"section\tTag"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"tra",
+				"transition\tproperty"
+			],
+			[
+				"tr",
+				"transition\tproperty"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"font-",
+				"font-family\tproperty"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"background-",
+				"background-image\tproperty"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"border",
+				"border-radius\tproperty"
+			],
+			[
+				"M",
+				"margin-left\tproperty"
+			],
+			[
+				"pA",
+				"padding-right\tproperty"
+			],
+			[
+				"bor",
+				"border-radius\tproperty"
+			],
+			[
+				"R",
+				"rgba()\tbackground-color"
+			],
+			[
+				"B",
+				"background-color\tproperty"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"date",
+				"Date"
+			],
+			[
+				"D",
+				"Default"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"tas",
+				"Task"
+			],
+			[
+				"fa",
+				"fa-star"
+			],
+			[
+				"g",
+				"getElementById"
+			],
+			[
+				"fi",
+				"fill\tproperty"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"nu",
+				"number"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"A",
+				"alt\tAttr"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/eng samy/Desktop/s.css",
+		"/C/Users/eng samy/Desktop/login.html",
+		"/C/Users/eng samy/Desktop/home.html",
+		"/C/Users/eng samy/Desktop/admin.html",
+		"/C/Users/eng samy/Desktop/admin.css",
+		"/C/Users/eng samy/Desktop/admin.js",
+		"/C/Users/eng samy/Desktop/tasks.html",
+		"/C/Users/eng samy/Desktop/training project.html",
+		"/C/Users/eng samy/Desktop/style.css",
+		"/C/Users/eng samy/Desktop/admin3.html",
+		"/C/Users/eng samy/Desktop/admin2.html",
+		"/C/Users/eng samy/Desktop/to do.css",
+		"/C/Users/eng samy/Desktop/test.js",
+		"/C/Users/eng samy/Desktop/idex.js",
+		"/C/Users/eng samy/Desktop/Styl.css"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "home.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

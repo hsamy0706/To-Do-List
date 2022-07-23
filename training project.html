@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My to do list</title>
+  <link rel="stylesheet" type="text/css" href="project.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Grenze+Gotisch:wght@300&family=Indie+Flower&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body> 
+
+<div class="nav">   
+        <ul>
+          <li> <a href="home.html" >Home</a></li>
+          <li onclick="Clear()"> <a href="login.html">Log out</a></li>
+        </ul>
+        <h4 class="logo"> To Do List</h4>
+</div>
+
+     
+<div class="leftfloat">
+<form>
+<div class="All">
+
+
+<label class="sentence">What to do?</label><br>
+<input type="text" placeholder="Your task" id="task" /> 
+<div id="Star">
+    <input type="checkbox" id="star1" name="Star" />
+    <label for="star1" title="text">   Important</label>
+</div>
+   <br>
+
+<label class="sentence"> Due time: </label><br>
+<input type="date" id="date" /><br>
+
+
+<label class="sentence">Note</label><br>
+<textarea class="Note" rows="5" cols="50" id="note"></textarea><br>
+
+
+<label class="sentence"> Lists </label><br>
+<select id="categories">
+   <option value="Default"  > Default </option>
+   <option value="Personal" > Personal </option>
+   <option value="Shopping" > Shopping </option>
+   <option value="Work"> Work </option>
+   <option value="WishList"> WishList </option>
+</select>
+<br>
+ 
+<br> <br>
+<a href="tasks.html"><input type="button" value="Done" id="button" class="done" onclick="main()"></a>
+
+</div>
+</form>
+</div>
+<div class="rightfloat">
+  <p>
+    <h3>Believe</h3>
+    <h3>That you</h3>
+    <h3>Can</h3>
+    <h3>Do it</h3>
+
+  </p>
+</div>
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script type="text/javascript">
+
+var yourTask=[];
+
+var homeList=localStorage.getItem("textvalue");
+document.getElementById('categories').value = homeList;
+console.log(homeList);
+
+    var transFont = localStorage.getItem("Fon"); 
+  var transCol = localStorage.getItem("Col");
+  var transSty = localStorage.getItem("Sty");
+  
+  document.bgColor = transCol;
+    document.body.style.fontFamily = transFont;
+  document.body.style.color = transSty;
+  
+ function Clear()
+  {
+  sessionStorage.clear();
+  }      
+ function main()
+ {
+    var transVal = document.getElementById('categories').value;
+    var T= document.getElementById("task").value, 
+        N =document.getElementById("note").value,
+      I =document.getElementById("star1"),
+    date = document.getElementById("date").value,
+    today= new Date(),
+        sdate= new Date(document.getElementById('date').value);
+
+         today.setHours(0);
+         today.setSeconds(0);
+         today.setMinutes(0);
+
+       
+if(today > sdate)
+ {  
+    alert("This is an old date, that means this task you didin't do it. Do you agree?");
+ } 
+  
+  if(T!="")
+  {
+    yourTask.push(T);
+    }
+  if(N!="")
+  {
+  yourTask.push(N);
+    }
+  if(I.checked)
+  {
+  yourTask.push("Important");
+  }
+  if(date!="")
+  {
+    yourTask.push(date);
+  }
+  
+localStorage.setItem("textvalue",transVal);
+
+console.log("Hello");
+ } 
+ 
+ function doFirst()
+{
+var button=document.getElementById("button");
+button.addEventListener("click",saveCrap,false);
+}
+function saveCrap()
+{
+var transVal = document.getElementById('categories').value;
+sessionStorage.setItem(yourTask,transVal);
+
+document.getElementById("task").value="";
+document.getElementById("note").value="";
+document.getElementById("star1").checked=false;
+document.getElementById('categories').value="Default";
+document.getElementById("date").value="";
+}
+
+window.addEventListener("load",doFirst,false);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+      <link rel="stylesheet" type="text/css" href="tasks.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Grenze+Gotisch:wght@300&family=Indie+Flower&family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+  </head>
+  
+    <body>
+        
+<div class="nav">   
+        <ul>
+          <li> <a href="home.html" >Home</a></li>
+          <li onclick="Clear()"> <a href="login.html">Log out</a></li>
+        </ul>
+        <h4 class="logo"> To Do List</h4>
+</div>
+
+
+    <div type="container" id="tasks" class="leftfloat">
+     <p id="Title" >My Tasks</p>
+     <br>
+     <br>
+    </div>
+        <a href="training project.html">
+    <i class="fa fa-plus-circle" style="font-size:48px;color:gray"></i>
+    </a>
+        <div class="rightfloat">
+  <p>
+    <h3>Believe</h3><br>
+    <h3>That you</h3><br>
+    <h3>Can</h3><br>
+    <h3>Do it</h3>
+
+  </p>
+</div>
+       
+     <script type="text/javascript">
+        var transFont = localStorage.getItem("Fon"); 
+  var transCol = localStorage.getItem("Col");
+  var transSty = localStorage.getItem("Sty");
+  
+  document.bgColor = transCol;
+    document.body.style.fontFamily = transFont;
+    document.getElementById("tasks").style.fontFamily=transFont;
+  document.body.style.color = transSty;
+
+function Clear()
+  {
+  sessionStorage.clear();
+  }
+  
+function display()
+{
+    
+var transVal=localStorage.getItem("textvalue");
+Title.innerHTML += " Of "+transVal;
+for(var x=0; x < sessionStorage.length ; x++ )
+{  
+   var a = sessionStorage.key(x);
+   var b = sessionStorage.getItem(a);
+   if(b==transVal && a!="")
+   {   
+   let btn = document.createElement("button");
+   let lineBreak = document.createElement("br");
+   let lineBreak2 = document.createElement("br");
+   let checkBox = document.createElement("input");
+   checkBox.type = 'checkbox';
+
+   btn.innerText = "Delete";
+   btn.id=x;
+   tasks.appendChild(checkBox);
+   var i;
+   for(i=0; i< a.length ;i++)
+   {
+   if(a[i]==',')
+   {
+    
+      break;
+   }
+   tasks.appendChild(document.createTextNode(a[i]));
+   tasks.appendChild(btn);
+   }
+    tasks.appendChild(lineBreak);
+   for(var j=(i+1); j < a.length ;j++)
+   {
+      if(j==(i+1))
+     {
+      tasks.appendChild(document.createTextNode('*'));
+      }
+    if(a[j]==',')
+      {
+       tasks.appendChild(document.createTextNode("__"));
+        continue;
+      }
+     tasks.appendChild(document.createTextNode(a[j]));
+   }
+
+        tasks.appendChild(lineBreak2);   
+   btn.addEventListener( "click",  
+   function() 
+   {
+     x=btn.id;
+     var a = sessionStorage.key(x);
+     btn.remove();
+     sessionStorage.removeItem(a);
+     location.reload();
+  });
+   }
+}
+}
+
+window.addEventListener("load",display,false); 
+        </script>
+        </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>to-do list</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Grenze+Gotisch:wght@300&family=Indie+Flower&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="home.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    </head>
+   
+    <body>
+      
+       <div class="nav">
+         
+        <ul>
+          <li> <a href="#" class="active">Home</a></li>
+          <li> <a href="#About">About</a></li>
+          <li> <div class="dropdown">
+              <button class="dropbtn" id="tex">Team</button>
+               <div class="dropdown-content">
+                 <a href="#">Hoda Zain Elabdin 20191700734</a>
+                 <a href="#">Hoda Samy     20191700735</a>
+                 <a href="#">Hoda Mohamed    20191700736</a>
+                 <a href="#">Nada Tarek    20191700683</a>
+                 <a href="#">Nermen saber   20191700694</a>
+                 <a href="#">Menna Mohamed    20191700832</a>
+               </div>
+             </div>
+          </li>
+          <li onclick = "Clear()"><a href="login.html">Log out</a></li>
+        </ul>
+        <h4 class="logo"> To Do List</h4>
+       </div>
+       
+    <input type="checkbox" id="check" >
+    <label for="check">
+      <i   class="fas fa-bars " id="btn"> </i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    
+    
+  
+           <div class="sidebar">
+           
+             <header>All lists</header>
+
+              <ul class="ul-list">
+                <li class="items-list">
+                    <a href="tasks.html" > <p id="List1" onclick="Send('Default')"> <i class="fa fa-bars" ></i>Default </p> </a>                   
+                </li>
+                <li class="items-list">
+                    <a href="tasks.html"> <p id="List2" onclick="Send('Personal')"> <i class="fa fa-user" ></i> Personal</p> </a>                 
+                </li>
+                <li class="items-list">
+                    <a href="tasks.html"> <p id="List3"onclick="Send('Shopping')"> <i class="fa fa-shopping-cart" ></i> Shopping</p> </a>                 
+                </li>
+                <li class="items-list">
+                    <a href="tasks.html"> <p id="List4" onclick="Send('Wishlist')"> <i class="fa fa-bars" ></i> Wishlist </p> </a>               
+                </li>
+                <li class="items-list">
+                    <a href="tasks.html"> <p id="List5" onclick="Send('Work')"> <i class="fa fa-briefcase" ></i> Work </p> </a>
+                </li>
+            </ul>
+
+        </div>
+        
+    <section id="ground">  
+      <section class="sec1">
+           <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="3.jpeg" alt="">
+        </div>
+        <div class="slide">
+          <img src="5.jpeg" alt="">
+        </div>
+        <div class="slide">
+          <img src="7.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="6.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual" >
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </section>
+
+<section class="sec2" id="About">
+  <header>About</header>
+  <p>
+   To be successful, you have to use each day as an opportunity to improve, to be better, to get a little bit closer to your goals.
+    It might sound like a lot of work—and with a busy schedule, next to impossible. But the best part is, the more you accomplish, the more you’ll want to do, the higher you’ll want to reach. 
+    So as long as you have the hunger for success, you will always have the power within you to achieve it.
+    <br>
+    <br>
+    <span class="span">To Do List:</span>
+    
+    Gives you the confidence that everything’s organized and accounted for, so you can make progress on the things that are important to you.
+    <br>
+    Easily organize and prioritize your tasks so you’ll always know exactly what to work on next.
+    <br>
+  </p>
+</section>
+  </section>  
+        
+
+  
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <script type="text/javascript">
+   
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+
+
+  var transFont = localStorage.getItem("Fon"); 
+  var transCol = localStorage.getItem("Col");
+  var transSty = localStorage.getItem("Sty");
+  
+  document.bgColor = transCol;
+    document.body.style.fontFamily = transFont;
+  document.body.style.color = transSty;
+  document.getElementById("tex").style.fontFamily = transFont;
+  
+
+  
+  function Clear()
+  {
+  sessionStorage.clear();
+  } 
+  function Send(x)
+  {
+    localStorage.setItem("textvalue",x);
+  }
+    </script>
+
+   </body>
+   </html>
